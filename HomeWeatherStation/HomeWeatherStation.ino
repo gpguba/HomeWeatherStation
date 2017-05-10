@@ -490,6 +490,7 @@ void startWifi(){
 
   //connect to a network
   WiFi.begin(ssid, password);
+  
   Serial.print(dataAppender("**"));
   Serial.print(dataAppender("\nStarting up"));
   while (WiFi.status() != WL_CONNECTED) {
